@@ -1,0 +1,59 @@
+@import "variables";
+
+/*var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}*/
+
+/*Anidando selectores*/
+body{
+    background-color: darkcyan;
+
+    header{
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1{
+            margin: 20px 20px;
+            font-weight: bold;
+        }
+
+        nav{
+            font-weight: bold;
+            text-transform: uppercase;
+
+            li{
+                display: inline-block;
+
+                a{
+                    text-decoration: solid;
+                    /*Variables*/
+                    color: $color-texto;
+                    /*Operacion matematica*/
+                    font-size: $font-size -1rem;
+                    margin: $margenes;
+                    /*Ampersand*/
+                    &:hover{
+                        background-color: whitesmoke;
+                    }
+                }
+            }
+        }
+    }
+}
+

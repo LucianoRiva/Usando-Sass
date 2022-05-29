@@ -1,0 +1,43 @@
+/*var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}*/
+/*Anidando selectores*/
+body {
+  background-color: darkcyan; }
+  body header {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    body header h1 {
+      margin: 20px 20px;
+      font-weight: bold; }
+    body header nav {
+      font-weight: bold;
+      text-transform: uppercase; }
+      body header nav li {
+        display: inline-block; }
+        body header nav li a {
+          text-decoration: solid;
+          /*Variables*/
+          color: black;
+          /*Operacion matematica*/
+          font-size: 1.5rem -1rem;
+          margin: 20px 20px;
+          /*Ampersand*/ }
+          body header nav li a:hover {
+            background-color: whitesmoke; }
