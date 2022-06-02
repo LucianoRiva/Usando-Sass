@@ -1,90 +1,121 @@
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {
-    width: 8.33%;
-  }
-  .col-s-2 {
-    width: 16.66%;
-  }
-  .col-s-3 {
-    width: 25%;
-  }
-  .col-s-4 {
-    width: 33.33%;
-  }
-  .col-s-5 {
-    width: 41.66%;
-  }
-  .col-s-6 {
-    width: 50%;
-  }
-  .col-s-7 {
-    width: 58.33%;
-  }
-  .col-s-8 {
-    width: 66.66%;
-  }
-  .col-s-9 {
-    width: 75%;
-  }
-  .col-s-10 {
-    width: 83.33%;
-  }
-  .col-s-11 {
-    width: 91.66%;
-  }
-  .col-s-12 {
-    width: 100%;
-  }
+/*Agregando condicionales*/
+/*@if ($vista == escritorio) {
+    body {
+        background-color: gray;
+    }
+
+}@else {
+    body {
+        background-color: cadetblue;
+    }
+}*/
+body {
+  background-color: slateblue;
 }
 
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {
-    width: 8.33%;
-  }
-  .col-2 {
-    width: 16.66%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-4 {
-    width: 33.33%;
-  }
-  .col-5 {
-    width: 41.66%;
-  }
-  .col-6 {
-    width: 50%;
-  }
-  .col-7 {
-    width: 58.33%;
-  }
-  .col-8 {
-    width: 66.66%;
-  }
-  .col-9 {
-    width: 75%;
-  }
-  .col-10 {
-    width: 83.33%;
-  }
-  .col-11 {
-    width: 91.66%;
-  }
-  .col-12 {
-    width: 100%;
-  }
+/*bucles*/
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 6rem;
+}
+
+h4 {
+  font-size: 8rem;
+}
+
+h5 {
+  font-size: 10rem;
+}
+
+h6 {
+  font-size: 12rem;
+}
+
+.blue {
+  color: blue;
+}
+
+.green {
+  color: green;
+}
+
+.black {
+  color: black;
+}
+
+/*Maps*/
+.facebook {
+  color: black;
+}
+
+.instagram {
+  color: #c85909;
+}
+
+.twitter {
+  color: #e01599;
+}
+
+/*map-get*/
+/*1er valor nombre del mapa, 2do valor el dato*/
+.patas {
+  background-color: Orange;
+  font-size: 28px;
+  height: 100px;
+  width: 100px;
+}
+
+/*Extend*/
+.estilo1, .estilo2 {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bolder;
+}
+
+.estilo2 {
+  font-size: 22px;
+}
+
+/*mixin*/
+/*Mixin SIN parametros*/
+.parrafosConEstilo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  text-align: right;
+}
+
+/*Mixin CON parametros*/
+.parrafosSinEstilo {
+  font-size: 30px;
+  text-align: right;
+}
+
+/*footer*/
+.estiloFooter {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+/*Header*/
+.estiloHeader {
+  text-align: right;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  color: white;
 }
 
 /*Anidando selectores*/
 body {
-  background-color: rgb(12, 3, 106);
+  background-color: #2b046f;
 }
 
 body header {
-  background-color: antiquewhite;
+  background-color: #2b046f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,8 +128,15 @@ body header {
 }
 
 body header h1 {
+  -webkit-animation-name: texto;
+          animation-name: texto;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 5;
+          animation-iteration-count: 5;
   margin: 20px 20px;
   font-weight: bold;
+  color: white;
 }
 
 body header nav {
@@ -114,7 +152,7 @@ body header nav li a {
   -webkit-text-decoration: solid;
           text-decoration: solid;
   /*Variables*/
-  color: black;
+  color: #e8e5e5;
   /*Operacion matematica*/
   font-size: 1.5rem -1rem;
   margin: 20px 20px;

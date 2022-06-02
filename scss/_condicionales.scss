@@ -1,0 +1,24 @@
+
+/*Agregando condicionales*/
+$vista: escritorio;
+
+/*@if ($vista == escritorio) {
+    body {
+        background-color: gray;
+    }
+
+}@else {
+    body {
+        background-color: cadetblue;
+    }
+}*/
+
+body {
+    @if ($vista == escritorio) {
+        background-color: slateblue;
+    }@else if($vista == movil) {
+        background-color: darkcyan;
+    }@else {
+        background-color: antiquewhite;
+    }
+}

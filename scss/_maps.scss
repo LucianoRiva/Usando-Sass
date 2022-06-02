@@ -1,0 +1,21 @@
+/*Maps*/
+
+$mapRedes:(facebook:black, instagram:rgb(200, 89, 9), twitter:rgb(224, 21, 153));
+
+@each $redesSociales, $colorRedesSociales in $mapRedes {
+    .#{$redesSociales} {
+        color: $colorRedesSociales;
+    }
+}
+
+
+/*map-get*/ /*1er valor nombre del mapa, 2do valor el dato*/
+
+$estilo:(color:Orange,tamFuente:28px);
+
+.patas {
+    background-color: map-get($estilo,color );
+    font-size: map-get($estilo,tamFuente );
+    height: 100px;
+    width: 100px;
+}

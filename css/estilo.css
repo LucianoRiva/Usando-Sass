@@ -1,31 +1,110 @@
-/*var slideIndex = 1;
-showDivs(slideIndex);
+/*Agregando condicionales*/
+/*@if ($vista == escritorio) {
+    body {
+        background-color: gray;
+    }
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
+}@else {
+    body {
+        background-color: cadetblue;
+    }
 }*/
+body {
+  background-color: slateblue; }
+
+/*bucles*/
+h2 {
+  font-size: 4rem; }
+
+h3 {
+  font-size: 6rem; }
+
+h4 {
+  font-size: 8rem; }
+
+h5 {
+  font-size: 10rem; }
+
+h6 {
+  font-size: 12rem; }
+
+.blue {
+  color: blue; }
+
+.green {
+  color: green; }
+
+.black {
+  color: black; }
+
+/*Maps*/
+.facebook {
+  color: black; }
+
+.instagram {
+  color: #c85909; }
+
+.twitter {
+  color: #e01599; }
+
+/*map-get*/
+/*1er valor nombre del mapa, 2do valor el dato*/
+.patas {
+  background-color: Orange;
+  font-size: 28px;
+  height: 100px;
+  width: 100px; }
+
+/*Extend*/
+.estilo1, .estilo2 {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bolder; }
+
+.estilo2 {
+  font-size: 22px; }
+
+/*mixin*/
+/*Mixin SIN parametros*/
+.parrafosConEstilo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  text-align: right; }
+
+/*Mixin CON parametros*/
+.parrafosSinEstilo {
+  font-size: 30px;
+  text-align: right; }
+
+/*footer*/
+.estiloFooter {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold; }
+
+/*Header*/
+.estiloHeader {
+  text-align: right;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  color: white; }
+
 /*Anidando selectores*/
 body {
   background-color: #2b046f; }
   body header {
-    background-color: antiquewhite;
+    background-color: #2b046f;
     display: flex;
     justify-content: space-between;
     align-items: center; }
     body header h1 {
+      animation-name: texto;
+      animation-duration: 5s;
+      animation-iteration-count: 5;
       margin: 20px 20px;
-      font-weight: bold; }
+      font-weight: bold;
+      color: white; }
     body header nav {
       font-weight: bold;
       text-transform: uppercase; }

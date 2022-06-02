@@ -1,36 +1,29 @@
 @import "variables";
-
-/*var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}*/
+@import "condicionales";
+@import "bucles";
+@import "maps";
+@import"extend";
+@import"mixin";
+@import"footer";
+@import"header";
 
 /*Anidando selectores*/
 body{
     background-color: rgb(43, 4, 111);
 
     header{
-        background-color: antiquewhite;
+        background-color: rgb(43, 4, 111);
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         h1{
+            animation-name: texto;
+            animation-duration: 5s;
+            animation-iteration-count: 5;
             margin: 20px 20px;
             font-weight: bold;
+            color: white;
         }
 
         nav{
