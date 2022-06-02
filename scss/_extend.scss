@@ -1,13 +1,14 @@
 /*Extend*/
 
-.estilo1 {
+.seleccion {
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bolder;
+    color: white
 
 }
 
- .estilo2 {
+ .h3 {
      @extend .estilo1;
-     font-size: 22px;
+     font-size: 12px;
  }
