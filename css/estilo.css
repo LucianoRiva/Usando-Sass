@@ -17,7 +17,7 @@ function showDivs(n) {
 }*/
 /*Anidando selectores*/
 body {
-  background-color: darkcyan; }
+  background-color: #2b046f; }
   body header {
     background-color: antiquewhite;
     display: flex;
@@ -34,7 +34,7 @@ body {
         body header nav li a {
           text-decoration: solid;
           /*Variables*/
-          color: black;
+          color: #e8e5e5;
           /*Operacion matematica*/
           font-size: 1.5rem -1rem;
           margin: 20px 20px;
