@@ -1,3 +1,9 @@
 $color-texto: rgb(232, 229, 229);
 $font-size: 1.5rem;
 $margenes: 20px 20px;
+$aspect-ratios: (
+  "1x1": 100%,
+  "4x3": calc(3 / 4 * 100%),
+  "16x9": calc(9 / 16 * 100%),
+  "21x9": calc(9 / 21 * 100%)
+);
