@@ -14,19 +14,19 @@ body {
 
 /*bucles*/
 h2 {
-  font-size: 4rem; }
+  font-size: 3rem; }
 
 h3 {
-  font-size: 6rem; }
+  font-size: 4.5rem; }
 
 h4 {
-  font-size: 8rem; }
+  font-size: 6rem; }
 
 h5 {
-  font-size: 10rem; }
+  font-size: 7.5rem; }
 
 h6 {
-  font-size: 12rem; }
+  font-size: 9rem; }
 
 .blue {
   color: blue; }
@@ -56,13 +56,11 @@ h6 {
   width: 100px; }
 
 /*Extend*/
-.estilo1, .estilo2 {
+.seleccion {
   text-align: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: bolder; }
-
-.estilo2 {
-  font-size: 22px; }
+  font-weight: bolder;
+  color: white; }
 
 /*mixin*/
 /*Mixin SIN parametros*/
@@ -83,28 +81,59 @@ h6 {
   font-weight: bold; }
 
 /*Header*/
-.estiloHeader {
+.header {
   text-align: right;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: bolder;
   font-size: 20px;
   color: white; }
 
+@keyframes texto {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 100%; } }
+
+/* 1 columna para smartphones */
+.breakpoint {
+  max-width: 100%;
+  display: inline-block; }
+
+/* 2 columnas para tablets */
+@media (min-width: 420px) {
+  .breakpoint {
+    max-width: 48%; } }
+
 /*Anidando selectores*/
+.seleccion {
+  animation-name: texto;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; }
+
 body {
-  background-color: #2b046f; }
+  background-color: #6f6a81; }
+  body .w3-content.w3-display-container {
+    text-align: center; }
   body header {
-    background-color: #2b046f;
+    background-color: #696471;
     display: flex;
     justify-content: space-between;
     align-items: center; }
     body header h1 {
       animation-name: texto;
       animation-duration: 5s;
-      animation-iteration-count: 5;
+      animation-iteration-count: infinite;
       margin: 20px 20px;
       font-weight: bold;
       color: white; }
+    body header h2 {
+      font-weight: bold;
+      color: white;
+      font-size: 20px; }
+    body header h3 {
+      font-weight: bold;
+      color: white;
+      font-size: 10px; }
     body header nav {
       font-weight: bold;
       text-transform: uppercase; }
@@ -120,3 +149,20 @@ body {
           /*Ampersand*/ }
           body header nav li a:hover {
             background-color: whitesmoke; }
+
+.divUno {
+  background-color: azure;
+  transition: height 0.4s;
+  width: 0.3s; }
+
+.divUno:hover {
+  background-color: black;
+  height: 300px;
+  width: 220px; }
+
+@media (max-width: 480px) {
+  body header {
+    display: block; }
+    body header nav li {
+      display: inline-block;
+      width: 49%; } }
