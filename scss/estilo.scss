@@ -34,16 +34,16 @@
 .seleccion{
             animation-name: texto;
             animation-duration: 2s;
-            animation-iteration-count: infinite;
+            animation-iteration-count: 5s;
         }
         
 
 
 body{
-    background-color: rgb(92, 87, 109);
+    background-color: rgb(23, 5, 80);
     .w3-content.w3-display-container{ text-align: center; }
     header{
-        background-color: rgb(105, 100, 113);
+        background-color: rgb(26, 7, 57);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -53,19 +53,23 @@ body{
             animation-duration: 5s;
             animation-iteration-count: infinite;
             margin: 20px 20px;
-            font-weight: bold;
+            font-weight: none;
             color: white;
         }
         h2{
             font-weight: bold;
             color: white;
-            font-size: 20px;
+            font-size: 2rem;
         }
 
         h3{
             font-weight: bold;
             color: white;
-            font-size: 10px;
+            font-size: 2rem;
+        }
+
+        footer{
+            color: white;
         }
         nav{
             font-weight: bold;
@@ -116,4 +120,12 @@ body{
 }    
 }
 }
+}
+footer{
+    color: white;
+}
+
+h3{
+    size: 3rem;
+    color: white;
 }
